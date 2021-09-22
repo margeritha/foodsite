@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+    width: 19.33%;
+  float: left;
+  padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+div.card {
+  width: 200px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3), 0 6px 50px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 50px;
+  
+}
+
+div.header {
+  background-color: 	#FFFFFF;
+  color: rgb(26, 16, 16);
+  padding: 20px;
+  font-size: 40px;
+  border-radius: 50px;
+}
+
+div.container {
+  padding: 10px;
+}
+
+img {
+  border-radius: 50%;
+  width: 80px;
+  height: 200px;
+  top: 190px; 
+}
+
+
+body {
+  font-family: serif;
+  color: rgb(7, 2, 2);
+  text-align: center;
+}
+
+.split {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.button {
+  background-color: #e6190a; 
+  border: none;
+  color: white;
+  padding: 12px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button4 {border-radius: 30px;}
+ .right{
+    width: 150%;
+            height: 100%;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.centered {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 20%;
+}
+/*for grid view*/
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+   padding:1opx;
+  width: 100px;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 19px;
+  text-align: center;
+}
+
+.image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: black;
+}
+.profile-pic {
+display: inline;
+margin: 0 auto;
+margin-left: -25%; 
+height: 100%;
+width: auto;
+}
+.ex1 {
+  
+  padding-left: 350px;
+}
+.poit {
+  
+  padding-left: 350px;
+ 
+}
+
+
+.ryight {
+  float: right;
+  width: 300px;
+  
+  padding: 30px;
+}
+</style>
+</head>
+<body>
+
+    <div class="split left">
+        <div class="centered">
+          
+          <h2><b>Lorem <br>Ipsum</b></h2><br><br>
+          <span style="text-decoration: line-through; color: red;">
+              <span style="color: rgb(17, 7, 7);color: rgb(96, 95, 97);">About</span>
+             </span><br>
+             <br><span style="line-height: 400%;color: rgb(96, 95, 97);">Services</span>
+            <br><span style="line-height: 400%;color: rgb(96, 95, 97);">Cuisine</span>
+            <br><span style="line-height: 400%;color: rgb(96, 95, 97);">Gallery</span>
+             <br><span style="line-height: 400%;color: rgb(96, 95, 97);">Contact</span>
+             <br><span style="line-height: 400%;color: rgb(96, 95, 97);">Book</span>
+            <br><br><br><div class="right"><div class="button button4">cart</button></div></div>
+        </div>
+      </div>
+      <div class="body">
+          <div class="center">
+            <div class="ryight">
+          <p style="text-align:left;color: rgb(96, 95, 97);">Lorem Ipsum dolor sit amet,<br>
+              consectetur adipiscing elit, <br>sed do eiusmod tempor<br> incididunt ut labore et. </p>
+              <hr size="7" width="20%" Align="left" noshade="" color="red"></div></div>
+          <div class="poit"><b><h1 style="font-size: 400%;text-align: left;">What are you<br> having for Lunch?</h1></b>
+      </div></div></div>
+
+      <div class="ex1"><div class="row">
+        
+
+      <div class="column">
+      <div class="card">
+          <div class="header">
+            <img src="mexicantaco.jpg" alt="Avatar" style="width:150px">
+        
+          </div>
+        
+          <div class="container">
+            <p><b>Mexican Taco</b></p>
+          </div>
+        </div></div>
+
+        
+    <div class="row">
+        <div class="column">
+    <div class="card">
+        <div class="header">
+          <img src="piza.jpg" alt="Avatar" style="width:150px" height="100">
+      
+        </div>
+      
+        <div class="container">
+          <p><b>Farmhouse Pizza</b></p>
+        </div>
+      </div></div>
+
+        <div class="column">
+        <div class="card">
+          <div class="header">
+            <img src="burger.jpg" alt="Avatar" style="width:150px">
+        
+          </div>
+        
+          <div class="container">
+            <p><b>Chicken Burger</b></p>
+          </div>
+        </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <div class="header">
+                <img src="nacho.jpeg" alt="Avatar" style="width:150px">
+            
+              </div>
+            
+              <div class="container">
+                <p><b>Loaded Nachos</b></p>
+              </div>
+            </div></div>
+        
+          <div class="column">
+            <div class="card">
+              <div class="header">
+                <img src="hakka.jpeg" alt="Avatar" style="width:150px">
+            
+              </div>
+            
+              <div class="container">
+                <p><b>Hakka Noodles</b></p>
+              </div>
+            </div>
+
+           
+                
+                  
+                  </div>
+
+      </body>
+      </html>
